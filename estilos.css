@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
@@ -31,7 +30,6 @@ h1 {
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.747);
 	padding: 5px 10px;
-	/* display: inline-block; */
 }
 
 .contenedor-botones {
@@ -42,7 +40,6 @@ h1 {
 }
 
 .boton {
-	/* display: inline-flex; */
 	align-items: center;
 	justify-content: center;
 	width: 80%;
@@ -111,49 +108,39 @@ h1 {
 	background: #960909;
 }
 
-
 /* ..................BOTÓN TRES.................... */
 
+.contenedor .contenedor-botones .tres:hover {
+	background: #26ee37;
+	box-shadow: 0 0 10px #26ee37, 0 0 40px #26ee37, 0 0 80px #26ee37;
+}
 
-.contenedor .contenedor-botones .tres:hover{
-    background: #26ee37;
-    box-shadow: 0 0 10px #26ee37, 0 0 40px #26ee37, 0 0 80px #26ee37;
- }
+/* ..................BOTÓN CUATRO.................... */
 
+.contenedor .contenedor-botones .cuatro {
+	background: linear-gradient(to left, #00B7DA, #161569, #00B7DA);
+	background-size: 300%;
+	transition: .4s ease-in-out all;
+}
 
- /* ..................BOTÓN CUATRO.................... */
+.contenedor .contenedor-botones .cuatro:hover {
+	background-position: right;
+}
 
+/* ..................BOTÓN CINCO.................... */
 
- .contenedor .contenedor-botones .cuatro{
-	 background: linear-gradient(to left, #00B7DA, #161569, #00B7DA );
-	 background-size: 300%;
-	 transition: .4s ease-in-out all;
- }
+.contenedor .contenedor-botones .cinco:hover {
+	box-shadow: 0px 0px 57px 27px rgb(33 164 202);
+	background-color: rgb(0, 0, 0, 0.14);
+}
 
- .contenedor .contenedor-botones .cuatro:hover{
-	 background-position: right;
- }
-
-
-  /* ..................BOTÓN CINCO.................... */
-
-
-  .contenedor .contenedor-botones .cinco:hover{
-	  box-shadow: 0px 0px 57px 27px rgb(33 164 202);
-	  background-color: rgb(0, 0, 0, 0.14);
-	  
-  }
-
-  .contenedor .contenedor-botones .cinco:hover span{
+.contenedor .contenedor-botones .cinco:hover span {
 	color: rgb(33 164 202);
-  }
+}
 
+/* ..................BOTÓN SEIS.................... */
 
-  /* ..................BOTÓN SEIS.................... */
-
-
-
-  .contenedor .contenedor-botones .seis::after {
+.contenedor .contenedor-botones .seis::after {
 	content: "";
 	width: 50%;
 	height: 100px;
@@ -164,45 +151,42 @@ h1 {
 	left: -50%;
 	transition: .4s ease-in-out all;
 	border-radius: 0px 300px 300px 0px;
-	}
+}
 
-	.contenedor .contenedor-botones .seis::before {
-		content: "";
-		width: 65%;
-		height: 100px;
-		background: #21e78b;
-		position: absolute;
-		z-index: 1;
-		top: -25px;
-		left: -65%;
-		transition: .4s ease all;
-		border-radius: 0px 300px 300px 0px;
-	}
+.contenedor .contenedor-botones .seis::before {
+	content: "";
+	width: 65%;
+	height: 100px;
+	background: #21e78b;
+	position: absolute;
+	z-index: 1;
+	top: -25px;
+	left: -65%;
+	transition: .4s ease all;
+	border-radius: 0px 300px 300px 0px;
+}
 
-	.contenedor .contenedor-botones .seis .onda {
-		content: "";
-		width: 80%;
-		height: 100px;
-		background: #7dffc2;
-		position: absolute;
-		z-index: 0;
-		top: -25px;
-		left: -80%;
-		transition: .4s ease all;
-		border-radius: 0px 300px 300px 0px;
-	}
-	
+.contenedor .contenedor-botones .seis .onda {
+	content: "";
+	width: 80%;
+	height: 100px;
+	background: #7dffc2;
+	position: absolute;
+	z-index: 0;
+	top: -25px;
+	left: -80%;
+	transition: .4s ease all;
+	border-radius: 0px 300px 300px 0px;
+}
 
-	.contenedor .contenedor-botones .seis:hover::after,
-	.contenedor .contenedor-botones .seis:hover::before,
-	.contenedor .contenedor-botones .seis:hover .onda {
-		left: 0;
-	}
+.contenedor .contenedor-botones .seis:hover::after, .contenedor .contenedor-botones .seis:hover::before, .contenedor .contenedor-botones .seis:hover .onda {
+	left: 0;
+}
 
-	.contenedor .contenedor-botones .seis:hover::before{
-		transition-delay: .1s;
-	}
+.contenedor .contenedor-botones .seis:hover::before {
+	transition-delay: .1s;
+}
 
-	.contenedor .contenedor-botones .seis:hover .onda{
-		transition-delay: .2s;
-	}
+.contenedor .contenedor-botones .seis:hover .onda {
+	transition-delay: .2s;
+}
